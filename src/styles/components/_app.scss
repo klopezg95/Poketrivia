@@ -1,0 +1,151 @@
+// @font-face {
+//     font-family: 'Pokemon';
+//     src: url('../../styles/base/fonts/Pokemon_Hollow.ttf') format('ttf');
+//         // url('../base/fonts/Pokemon\ Solid.ttf') format('truetype');
+//         font-weight: normal;
+//         font-style: normal;
+        
+// }
+
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10%;
+    background-color: antiquewhite;
+
+    .mainshow {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+
+        .show1 {
+            background-color: $red;
+            // margin-bottom: 20px;
+            width: 25vw;
+            height: 30vh;
+            border: 5px $black solid;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+
+            .screen {
+                background-color: $gray;
+                width: 22vw;
+                height: 24vh;
+                margin: 20px auto;
+                
+
+                img {
+
+                    width: 80%;
+                    height: 100%;
+
+                }
+
+
+
+            }
+
+
+
+        }
+        .clear{
+            height: 7px;
+            background-color: $gray;
+            border-left: 3px $black solid;
+            border-right: 3px $black solid;
+        }
+
+        .show2 {
+            background-color: $red;
+            border-radius:  0 0 10px 10px;
+            margin-bottom: 20px;
+            width: 25vw;
+            height: 30vh;
+            border: 5px $black solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .input {
+                width: 60%;
+                font-size:16px;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            .bothBottons {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 10%;
+
+
+                .button-green {
+                    background-color: $green;
+                    font-size: 20px;
+                    color: white;
+                    width: 5vw;
+                    height: 7vh;
+                    border-radius: 100%;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: $greenLight;
+                        transform: scale(1.1);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+
+                .button-blue {
+                    background-color: $blue;
+                    font-size: 20px;
+                    color: white;
+                    width: 5vw;
+                    height: 7vh;
+                    border-radius: 100%;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: $blueLight;
+                        transform: scale(1.1);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+
+            }
+
+            h2 {
+                position: relative;
+                top:-180%;
+                left: 90%;
+                font-size: 2vw;
+
+                
+                
+                // top: 20%;
+                // left: 80%;
+            }
+        }
+
+
+
+
+    }
+
+    .title {
+        width: 30vw;      
+        position: absolute;
+        top: 3%
+        
+    }
+
+}
